@@ -1,29 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Be Vietnam Pro");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Be Vietnam Pro" , sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
 }
-:root{
+
+:root {
     --bgOrange: #e84949;
 }
 
-#wrapper{
+#wrapper {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
 
 }
 
-.container{
+.container {
     width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,60 +33,60 @@
 
 }
 
-.logo{
+.logo {
     width: 80px;
 }
 
-.logo-container{
+.logo-container {
     display: flex;
     justify-content: baseline;
     align-items: center;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
     gap: 2rem;
     padding: 0 4em;
 }
 
-.logotext{
+.logotext {
     margin-left: -1.2rem;
     font-size: 28px;
 }
 
-.nav-items div{
+.nav-items div {
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
 }
 
-.nav-items div a{
+.nav-items div a {
     color: black;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.nav-items div:hover{
+.nav-items div:hover {
     font-weight: bold;
     transition: 0.8s;
 }
 
 
-.hero-section{
+.hero-section {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width:1200px;
+    width: 1200px;
     gap: 5rem;
     margin: 4rem auto;
     padding: 0 1rem;
     padding-bottom: 8rem;
 }
 
-.faded-text{
+.faded-text {
     user-select: none;
     font-size: 6em;
     color: rgb(231, 231, 231);
@@ -96,30 +97,30 @@ a{
 }
 
 
-.hero-section-left{
+.hero-section-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }
 
-.hero-section-heading{
+.hero-section-heading {
     font-size: 35px;
     color: #343d68;
     line-height: 30px;
 }
 
-.role{
-    color:#4e45d5;
+.role {
+    color: #4e45d5;
     font-weight: 500;
 }
 
-.hero-section-subheading{
+.hero-section-subheading {
     font-size: 45px;
     line-height: 40px;
 }
 
-.hero-section-des{
+.hero-section-des {
     font-size: 16px;
     margin-top: 1rem;
     width: 70%;
@@ -178,16 +179,16 @@ a{
 }
 
 
-.hero-section-right{
+.hero-section-right {
     position: relative;
 
 }
 
-.absolute{
+.absolute {
     position: absolute;
 }
 
-.User-Image{
+.User-Image {
     padding: 2.5rem;
     transition: all 1s;
     filter: grayscale(1);
@@ -214,7 +215,7 @@ a{
     }
 }
 
-.User-Image img{
+.User-Image img {
     z-index: -9;
     width: 100%;
 }
@@ -305,26 +306,26 @@ a{
 }
 
 /* Projects Section  */
-.project-section{
+.project-section {
     margin-top: 4rem;
     background-color: #e7e7e7;
 }
 
-.page-header{
-    color:#e84949;
+.page-header {
+    color: #e84949;
     font-size: 90px;
     line-height: 75px;
     padding: 50px 0 30px;
     text-align: center;
 }
 
-.project-container{
+.project-container {
     display: flex;
     flex-direction: column;
     gap: 120px;
 }
 
-#project1{
+#project1 {
     background-image: url(./Images/projects/Project1.png);
     right: 5%;
 }
@@ -445,7 +446,7 @@ a{
     line-height: 3rem;
 }
 
-.project-subheading{
+.project-subheading {
     font-size: 16px;
     font-style: italic;
     width: 70%;
@@ -477,99 +478,104 @@ a{
     color: rgb(162, 162, 223);
 }
 
-@media (max-width:1300px){
+@media (max-width:1300px) {
     .hero-section {
         flex-direction: column;
         gap: 3rem;
     }
+
     .hero-section-heading {
         font-size: 2rem;
     }
-    
+
     .hero-section-subheading {
         font-size: 1.5rem;
     }
-    
+
     .hero-section-des {
         max-width: 100%;
         text-align: center;
     }
 
-    .faded-text{
+    .faded-text {
         bottom: -9%;
         font-size: 3em;
     }
 
-    .page-header{
+    .page-header {
         padding-top: 30px;
         color: var(--bgOrange);
         text-align: center;
         font-size: 40px;
     }
-    .project-container{
+
+    .project-container {
         padding: 5px;
         margin: 10px;
         gap: 60px;
     }
-    .project-card{
+
+    .project-card {
         width: 90%;
         height: 300px;
         margin: 0 auto;
     }
-    .project-card{
+
+    .project-card {
         background-size: cover;
         background-position: center;
     }
-    .project-content{
+
+    .project-content {
         scale: 0.5;
         bottom: 0;
         left: 0;
         right: 0;
         top: 0;
     }
-    .leftProjectContent{
+
+    .leftProjectContent {
         left: 0;
     }
-    .project-heading{
+
+    .project-heading {
         font-size: 40px;
         width: 100%;
     }
-    .project-subheading{
+
+    .project-subheading {
         width: 100%;
     }
-    #project1{
+
+    #project1 {
         right: 0;
     }
-    #project2{
+
+    #project2 {
         left: 0;
     }
-    #project3{
+
+    #project3 {
         right: 0;
     }
-    #project4{
+
+    #project4 {
         left: 0;
     }
-    .project-skills{
+
+    .project-skills {
         width: 100%;
     }
-    .projectSkill{
+
+    .projectSkill {
         width: 35px;
     }
-    .project-card:hover .project-number{
+
+    .project-card:hover .project-number {
         display: none;
     }
-    .project-card:hover .project-content{
+
+    .project-card:hover .project-content {
         scale: 0.55;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
