@@ -579,3 +579,40 @@ a {
         scale: 0.55;
     }
 }
+
+/* skills section starts */
+
+.my-skills-section{
+    position: relative;
+    display: flex;
+    padding: 5rem;
+    margin: 10rem auto;
+    gap: 30px;
+}
+
+.leftSkillContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.skillHeading{
+    color: #e84949;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.skillHeading span {
+    font-size: 90px;
+}
+
+.skillSubHeading{
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+}
+
+.skillSubHeading p{
+    margin: 15px 0;
+}
